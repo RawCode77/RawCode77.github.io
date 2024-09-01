@@ -7,18 +7,13 @@
 html,
 body {
   height: 100%;
-  
 }
 
 body {
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
- background: rgb(66, 66, 66); /**/
-  
+  background: rgb(66, 66, 66); /**/
 }
-/* body {
-  background-image:url("images/sidebar_bottom.png") repeat-x top;
-} */
 
 :root {
   --main-color: #f8b281;
@@ -64,75 +59,24 @@ h3 {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100vh;
-  object-fit: cover;
+  height: 110vh;
+  /* object-fit: cover; */
   z-index: -1;
+  opacity: 0.7;
 }
- .hero { 
-   opacity: 0.7;   
-   /* background: linear-gradient(
-    270deg,
-    rgba(0, 0, 0, 0.86) 25.81047381546135%,
-    rgba(0, 0, 0, 0.86) 26.932668329177055%,
-    rgba(254, 254, 254, 1) 100%
-  ); */}  
-  /* .big-image {
-    padding: 10em;
-    height: 100px;
-    width: 100%;
-    background-image: url("images/leshop-front1.jpg");
-     background-repeat: no-repeat;
-    background-size: cover ; 
-  } */
+.hero {
+  background-image: url("images/sidebar_bottom.png"),
+    url("images/leshop-front1.jpg");
+  background-repeat: repeat-x, no-repeat;
+  background-size: 100%, cover;
+  /* background-size: 88% 3em, cover;  */
+  /* background-size: 12em 3em, cover;  */
 
-  
-  
-   /* .big-image2 { 
-    position: absolute;
-    width: 100%;
-     height: 15vh;
-    left: 0;
-    right: 0;
-
-    padding: 5px 0px 5px 0px;
-    margin: 5px 5px 5px 2px;
-    background-image: url("images/sidebar_top.png");
-     background-repeat: repeat-x;
-    background-position-y: bottom ;
-    background-size: 40% ; 
-   
-  }   */
-
-  /* Second background image */
-.image-container {
-  content: "";
-  background-repeat: repeat-y;
-  background-size: 100% 20px; /* Set height to 20px */
-  position: absolute;
-  top: 19%; /*Position25% lower from the top */
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 15px;
-  z-index: -1; /*Place it behind other content   */
-}
-/* In your CSS */
-.image-container {
-  position:absolute;
-  width: 100%;
-  height: 0;
-  padding-bottom: 4.88%; /* (13 / 266) * 100 = 4.88% */
-  overflow: hidden;
+  /* Adjust background positions */
+  background-position: 0px 193px,
+    /* Positioning for sidebar_bottom.png top 23% center, */ 0px 0px; /* Positioning for leshop-front1.jpg */
 }
 
-.image-container img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 .best-coffee {
   background-color: royalblue;
   color: blanchedalmond;
@@ -148,63 +92,22 @@ h3 {
   height: 100%;
 }
 
- img {
+/* img {
   height: 100%;
   width: 100%;
-  object-fit: cover; 
+  object-fit: cover;
   display: block;
-}
+} */
 
 .gradient {
-  height: 19%;
+  height: 12em;
   width: 100%;
-  background-color: rgb(38, 25, 34); 
-  /* background: linear-gradient(
-    270deg,
-    rgba(0, 0, 0, 0.6) 25.81047381546135%,
-    rgba(0, 0, 0, 0.61) 26.932668329177055%,
-    rgba(254, 254, 254, 1) 100%
-  ); */
-  /* opacity: 0.8; */
-  /* background: linear-gradient(
-    267deg,
-    rgba(0, 0, 0, 0.77) 28.179551122194514%,
-    rgba(0, 0, 0, 0.64) 70.82294264339151%,
-    rgba(253, 253, 253, 0.54) 100%
-  );  */
-  /* background: linear-gradient(
-    1deg,
-    rgba(0, 0, 0, 0.84) 0%,
-    rgba(0, 0, 0, 0.84) 57.48129675810474%,
-    rgba(254, 254, 254, 0.84) 100%
-  ); */
-  /* background: linear-gradient(92deg, rgba(0,0,0,0.91) 0%, rgba(0,0,0,0.63) 100%); */
-  /* background: linear-gradient(
-    90deg,
-    rgba(112, 59, 10, 0.49) 3.2418952618453867%,
-    rgba(111, 62, 12, 0.68) 50.99750623441397%,
-    rgba(112, 60, 10, 0.88) 100%
-  ); */
+  background-color: rgb(38, 25, 34);
+
   position: absolute;
   top: 0;
   left: 0;
 }
-
-
-
-
-/* section .image1 {
-  width: 1700px;
-  height: 25px;
-margin: 0px 0px;
-padding: 1px 0px; */
-  /* border: solid black 1px; */
-  /* background-image: url('images/sidebar_bottom.png');
-  background-repeat:repeat-x;
-  background-size: 50%;
-}
- */
-/* header */
 
 #header_bar {
   clear: both;
@@ -221,16 +124,18 @@ padding: 1px 0px; */
   padding: 0 30px;
   /* margin-top: 0; */
   overflow: hidden;
-  background: url(images/site_title_left.png) no-repeat top left;
+  /* background: url(images/site_title_left.png) no-repeat top left; */
 }
 
 #header_bar #header .right {
   position: absolute;
   top: 0;
   right: 0;
-  width: 25px;
-  height: 83px;
-  background: url(images/site_title_right.png);
+  /* width: 25px; */
+  width: 1.563rem;
+  height: 5.188rem;
+  /* height: 83px; */
+  /* background: url(images/site_title_right.png); */
 }
 
 #header_bar #header h1 {
@@ -238,13 +143,13 @@ padding: 1px 0px; */
   padding: 0;
   text-shadow: 3px 0 1px rgb(244, 241, 241);
   color: var(--main-color);
-  font-size: 50px;
+  font-size: 2.125rem;
 }
 
 #header_bar #header h1 a {
   margin: 0;
   padding: 0;
-  font-size: 17px;
+  font-size: 1.063rem;
   color: #f8f3f3;
   font-weight: bold;
   text-decoration: none;
@@ -259,7 +164,7 @@ padding: 1px 0px; */
 #header_bar #header h1 a span {
   display: block;
   padding: 4px 0 0 0;
-  font-size: 15px;
+  font-size: 0.938;
   color: #f8f4f4;
 
   font-weight: normal;
@@ -271,6 +176,7 @@ padding: 1px 0px; */
   font-family: "Oleo Script Swash Caps", system-ui;
   font-weight: 700;
   font-style: normal;
+  
 }
 /* ticker tape :start */
 .ticker-tape {
@@ -388,7 +294,7 @@ nav svg {
 }
 
 .selling-point {
-  margin-top: 25vh;
+  margin-top: 12.5vh;
   text-shadow: 0px 9px 12px rgba(245, 240, 240, 0.98);
   text-align: center;
 }
@@ -400,7 +306,7 @@ nav svg {
   /* text-shadow: 0px 4px 12px rgba(245, 240, 240, 0.98); */
 }
 .selling-point h3 {
-  text-shadow:2px 7px 4px rgb(14, 14, 14);
+  text-shadow: 2px 7px 4px rgb(14, 14, 14);
   color: #f4f1f1;
   /* text-shadow: 0px 4px 12px rgba(247, 242, 242, 0.488); */
   /* text-shadow: 0px 4px 12px rgba(245, 240, 240, 0.98); */
@@ -418,11 +324,22 @@ nav svg {
   align-items: center;
   justify-content: center;
 }
+
+/* How to Align Image and Text Side by Side in HTML & CSS | 
+Wrap Text Around Image HTML CSS
+https://www.youtube.com/watch?v=lgX38fNbxmw
+*/
 img {
-  max-width: 100%;
+  max-width: 150px;
+  height: 30%;
+
+  
 }
 .image {
-  flex-basis: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
 }
 
 .text {
@@ -462,14 +379,12 @@ img {
   width: 100%;
   border-radius: 1rem;
   margin-top: 2rem;
-  
 }
 
 .ledep-main,
 .ledep-maisonnuve,
 .ledep-union {
   position: relative;
-  
 }
 
 .videos h3 {

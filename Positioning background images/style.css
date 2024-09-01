@@ -1,0 +1,34 @@
+/* Shared among all <div>s */
+div {
+    background-color: #ffee99;
+    background-repeat: no-repeat;
+    width: 1000px;
+    height: 100vh;
+    margin-bottom: 12px;
+  }
+  
+  /* These examples use the `background` shorthand property */
+  .exampleone {
+    background: url("startransparent.gif") #ffee99 2.5cm bottom no-repeat;
+  }
+  .exampletwo {
+    background: url("startransparent.gif") #ffee99 left 4em bottom 1em no-repeat;
+  }
+  
+  /* Multiple background images: Each image is matched with the
+     corresponding position, from first specified to last. */
+     .examplethree {
+        background-image: url("../images/sidebar_bottom.png"), url("../images/leshop-front1.jpg");
+        background-repeat: repeat-x, no-repeat; 
+        /* background-size: 100%, cover; */
+        background-size: 355px 30px, cover;
+       
+        
+        /* Adjust background positions */
+        background-position:
+         top 10% center,      /* Positioning for sidebar_bottom.png */
+            0px 0px;         /* Positioning for leshop-front1.jpg */
+    }
+    
+    
+  
